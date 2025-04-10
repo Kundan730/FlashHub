@@ -146,7 +146,7 @@ export default function Home() {
                 <div className="bg-white p-4">
                   {/* Replace with your actual dashboard image */}
                   <img 
-                    src="/Screenshot 2025-04-10 213652.png" 
+                    src="/Screenshot 2025-04-10 at 11.16.09 PM.png" 
                     alt="Project Analytics Dashboard" 
                     className="w-full rounded shadow-sm"
                   />
