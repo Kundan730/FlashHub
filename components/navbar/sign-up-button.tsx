@@ -1,13 +1,19 @@
 const SignUpButton = () => {
     return ( 
     <div className="
-    bg-[black]
-     text-white
-     text-center
-      p-1.5 px-4
-      rounded-md
-      text-lg
-      ">
+    bg-gradient-to-r from-indigo-600 to-purple-600
+    hover:from-indigo-700 hover:to-purple-700
+    text-white
+    text-center
+    p-2 px-5
+    rounded-md
+    text-lg
+    font-medium
+    shadow-md
+    cursor-pointer
+    transition-all duration-300
+    transform hover:scale-105
+    ">
         launch your project
     </div> );
 }
