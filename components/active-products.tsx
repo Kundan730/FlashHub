@@ -83,7 +83,7 @@ const ActiveProducts: React.FC<ActiveProductsProps> = async ({
   return (
     <div className="w-full">
       <div className="flex items-center border-b pb-3">
-        <h1 className="text-xl font-medium">All Products</h1>
+        <h1 className="text-xl font-medium">All Projects</h1>
       </div>
 
       <div className="space-y-2 py-6 flex flex-col">
