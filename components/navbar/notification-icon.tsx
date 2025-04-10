@@ -68,7 +68,7 @@ const NotificationIcon: React.FC<NotificationIconProps> = ({
             <PiBell className="text-gray-600 text-xl" />
             {unreadNotifications > 0 && (
               <div
-                className="absolute ml-3 mb-3 bg-red-500
+                className="absolute ml-3 mb-3 bg-indigo-500
              text-white rounded-full 
              h-4 w-4 flex 
              items-center

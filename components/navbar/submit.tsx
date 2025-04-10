@@ -27,7 +27,7 @@ const Submit: React.FC<SubmitProps> = ({ products, authenticatedUser }) => {
 
   return (
     <div>
-      <button onClick={handleClick} className="text-[#ff6154]">
+      <button onClick={handleClick} className="text-indigo-500">
         Submit
       </button>
       <MembershipModal

@@ -134,12 +134,38 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Illustration */}
+            {/* Dashboard Card - Updated with hackathon-relevant content */}
             <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-              <div className="w-full max-w-md h-64 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-4xl font-bold text-indigo-600 mb-4">1,500+</div>
-                  <p className="text-slate-600">projects launched this year</p>
+              <div className="w-full max-w-md rounded-lg shadow-lg overflow-hidden border border-indigo-100">
+                {/* Card Header */}
+                <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-4">
+                  <h3 className="text-xl font-semibold text-white">live project dashboard and analytics</h3>
+                </div>
+                
+                {/* Dashboard Image Container */}
+                <div className="bg-white p-4">
+                  {/* Replace with your actual dashboard image */}
+                  <img 
+                    src="/Screenshot 2025-04-10 213652.png" 
+                    alt="Project Analytics Dashboard" 
+                    className="w-full rounded shadow-sm"
+                  />
+                </div>
+                
+                {/* Stats Footer - Updated with hackathon content */}
+                <div className="bg-gradient-to-br from-indigo-50 to-purple-50 px-6 py-4 flex justify-between items-center">
+                  <div>
+                    <div className="flex items-baseline">
+                      <span className="text-4xl font-bold text-indigo-600">24</span>
+                      <span className="ml-1 text-lg text-indigo-400">hours</span>
+                    </div>
+                    <p className="text-slate-600">from idea to featured project</p>
+                  </div>
+                  <div className="bg-indigo-100 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
