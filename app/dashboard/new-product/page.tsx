@@ -54,6 +54,8 @@ const categories = [
   "Bootstrapped",
   "Art",
   "Analytics",
+  "IOT",
+  "AI",
 ];
 
 const NewProduct = () => {

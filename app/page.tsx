@@ -30,7 +30,7 @@ export default function Home() {
             {/* Modified Spotlight header with full-width underline */}
             <div className="flex justify-between items-center w-full relative">
               <h3 className="text-xl lowercase font-medium">
-                Spotlight
+                Spot
               </h3>
               <div className="flex items-center space-x-2">
                 <span className="relative flex h-3 w-3">

@@ -8,7 +8,7 @@ const RecentActivity: React.FC<RecentActivityProps> = ({users}) => {
     return ( 
     <div className="space-y-4">
        {users.map((user: any) => (
-           <div key={user.id} className="flex items-center gap-x-6 w-full">
+           <div key={user.id} className="flex items-cenw,8ter gap-x-6 w-full">
             <div className="text-2xl">🎉</div> 
             <Image
             src={user.image} 
