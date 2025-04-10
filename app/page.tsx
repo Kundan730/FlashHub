@@ -27,19 +27,20 @@ export default function Home() {
         </div>
         <div className="w-[30%] h-full flex items-center flex-col overflow-hidden">
           <div className="px-1 pt-4 w-full flex flex-col">
-            {/* Centered Spotlight header with Live animation */}
-            <div className="flex flex-col items-center w-full">
+            {/* Modified Spotlight header with full-width underline */}
+            <div className="flex justify-between items-center w-full relative">
+              <h3 className="text-xl lowercase font-medium">
+                Spotlight
+              </h3>
               <div className="flex items-center space-x-2">
-                <h3 className="text-xl lowercase font-medium relative inline-block">
-                  Spotlight
-                  <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500"></span>
-                </h3>
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
                 </span>
                 <span className="text-sm text-gray-500">Live</span>
               </div>
+              {/* Full-width underline that spans across the entire card */}
+              <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500"></span>
             </div>
             
             <div
@@ -128,7 +129,7 @@ export default function Home() {
                 <div className="flex-shrink-0 bg-gradient-to-r from-indigo-500 to-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">3</div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">collect votes & feedback</h3>
-                  <p className="text-slate-500">get real user feedback and track your project's performance</p>
+                  <p className="text-slate-500">get real user feedback and track your project&apos;s performance</p>
                 </div>
               </div>
             </div>
