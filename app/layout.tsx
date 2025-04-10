@@ -15,7 +15,7 @@ import { Suspense } from "react";
 
 const font = DM_Sans({ subsets: ['latin'] });
 export const metadata: Metadata = {
-  title: 'sanbox 23',
+  title: 'FlashHub',
   description: 'One platform for all your projects',
 };  
 

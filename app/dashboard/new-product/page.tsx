@@ -138,7 +138,7 @@ const NewProduct = () => {
           <div className="flex items-center gap-4  mx-auto">
             <PiXCircleFill className="text-red-500 text-3xl" />
             <div className="text-md font-semibold">
-              Please enter at least 4 characters for the  name.
+              Please enter at least 4 characters for the name.
             </div>
           </div>
         </>,
@@ -251,22 +251,8 @@ const NewProduct = () => {
       return;
     }
 
-    if (step == 6 && !website && !twitter && !discord) {
-      toast(
-        <>
-          <div className="flex items-center gap-4  mx-auto">
-            <PiXCircleFill className="text-red-500 text-3xl" />
-            <div className="text-md font-semibold">
-              Please enter at least one link for the project.
-            </div>
-          </div>
-        </>,
-        {
-          position: "top-center",
-        }
-      );
-      return;
-    }
+    // Removed the step 6 validation entirely since all links are now optional
+    // No validation check for website, twitter, or discord
 
     setStep(step + 1);
   }, [
@@ -278,13 +264,7 @@ const NewProduct = () => {
     uploadedLogoUrl,
     uploadedProductImages,
     date,
-    website,
-    twitter,
-    discord,
   ]);
-
-
-
 
   const prevStep = useCallback(() => {
     setStep(step - 1);
@@ -339,13 +319,10 @@ const NewProduct = () => {
       <div className="px-8 md:w-3/5 md:mx-auto">
         {step === 1 && (
           <motion.div 
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
-
-
-          
           className="space-y-10">
             <h1 className="text-4xl font-semibold"> 📦 New project</h1>
             <p className="text-xl font-light mt-4 leading-8">
@@ -385,9 +362,9 @@ const NewProduct = () => {
 
         {step === 2 && (
           <motion.div
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           className="space-y-10">
@@ -429,9 +406,9 @@ const NewProduct = () => {
 
         {step === 3 && (
           <motion.div
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           className="space-y-10">
@@ -474,9 +451,9 @@ const NewProduct = () => {
 
         {step === 4 && (
           <motion.div
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           className="space-y-10">
@@ -538,9 +515,9 @@ const NewProduct = () => {
 
         {step === 5 && (
           <motion.div
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           className="space-y-10">
@@ -584,22 +561,22 @@ const NewProduct = () => {
 
         {step === 6 && (
           <motion.div
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           className="space-y-10">
             <h1 className="text-4xl font-semibold">Additional Links </h1>
             <p className="text-xl font-light mt-4 leading-8">
               Add links to your product&apos;s website, social media, and other
-              platforms
+              platforms (all fields optional)
             </p>
 
             <div className="mt-10">
               <div className="font-medium flex items-center gap-x-2">
                 <PiPlanet className="text-2xl text-gray-600" />
-                <span>Website</span>
+                <span>Website (optional)</span>
               </div>
 
               <input
@@ -614,7 +591,7 @@ const NewProduct = () => {
             <div className="mt-10">
               <div className="font-medium flex items-center gap-x-2">
                 <PiTwitterLogoFill className="text-2xl text-sky-400" />
-                <div>Twitter</div>
+                <div>Twitter (optional)</div>
               </div>
 
               <input
@@ -629,7 +606,7 @@ const NewProduct = () => {
             <div className="mt-10">
               <div className="font-medium flex items-center gap-x-2">
                 <PiDiscordLogoFill className="text-2xl text-indigo-500" />
-                <div>Discord</div>
+                <div>Discord (optional)</div>
               </div>
 
               <input
@@ -645,9 +622,9 @@ const NewProduct = () => {
 
         {step === 7 && (
           <motion.div 
-          initial={{ opacity: 0, x: "100%" }} // Slide in from the right
-          animate={{ opacity: 1, x: 0 }} // Slide to the center
-          exit={{ opacity: 0, x: "-100%" }} // Slide out to the left
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.3 }}
           
           
@@ -678,7 +655,7 @@ const NewProduct = () => {
 
               <div>
                 <div className="font-semibold">Website URL</div>
-                <div className=" mt-2 text-gray-600">{website}</div>
+                <div className=" mt-2 text-gray-600">{website || "Not provided"}</div>
               </div>
 
               <div className="">
@@ -692,12 +669,12 @@ const NewProduct = () => {
 
               <div>
                 <div className="font-semibold">Twitter</div>
-                <div className=" mt-2 text-gray-600">{twitter}</div>
+                <div className=" mt-2 text-gray-600">{twitter || "Not provided"}</div>
               </div>
 
               <div>
                 <div className="font-semibold">Discord</div>
-                <div className=" mt-2 text-gray-600">{discord}</div>
+                <div className=" mt-2 text-gray-600">{discord || "Not provided"}</div>
               </div>
 
               <div className="">
