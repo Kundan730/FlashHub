@@ -1,5 +1,5 @@
 import { LaunchBtn } from "@/components/CtaBtn";
-import { ShoutOutMarque } from "@/components/ShoutOutsMarque";
+import ShoutOutMarque from "@/components/ShoutOutsMarque";
 import { LandingPageCommand } from "@/components/Command";
 
 export default function Home() {
